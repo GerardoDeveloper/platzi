@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Es el archivo de configuración donde se le indica adonde estan los tests-->
+<phpunit bootstrap="vendor/autoload.php" colors="true">
+    <testsuite name="Test directory">
+        <directory>tests</directory>
+    </testsuite>
+</phpunit>

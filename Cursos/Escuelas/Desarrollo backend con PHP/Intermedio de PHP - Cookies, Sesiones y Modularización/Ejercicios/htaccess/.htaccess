@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f # Sí no son archivos.
+RewriteCond %{REQUEST_FILENAME} !-d # Sí no son directorios.
+
+# Sí las condiciones de arriba son verdaderas, ejecuta el front-controller, es decir, el index.php.
+
+# Explicación de expresión regular.
+# ^: Inicio de una cadena.
+# $: Fin de una cedena.
+#.: Cualquier cáracter.
+# *: 1 o más cáracteres.
+# (): Lo que se coloque dentro, es una variable.
+RewriteRule ^(.*)$ index.php?page=$1 [L]

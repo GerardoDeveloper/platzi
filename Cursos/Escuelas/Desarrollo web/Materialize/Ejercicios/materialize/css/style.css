@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  height: 500px;
+}
+
+header nav {
+  height: 100px;
+  background: white;
+  box-shadow: none;
+}
+
+nav .brand-logo {
+  height: 100px;
+  left: 15%;
+}
+
+nav .brand-logo img {
+  width: 52px;
+}
+
+header nav ul {
+  height: 100px;
+}
+
+header ul a {
+  color: gray;
+}
+
+.header-main-pic {
+  width: 100%;
+  height: 400px;
+  background-image: url('../assets/img/Banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Permite reescribir los estilos de materialize*/
+.input-field.input-container {
+  height: 100px;
+  float: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+.input-field>#search {
+  margin-top: 25px;
+}
+
+.input-container i {
+  margin-top: 45px;
+  margin-right: 15px;
+}
+
+/*Otra forma de sobrescribir un estilo de materialize*/
+footer.page-footer {
+  height: 80px;
+  background: gray;
+  bottom: 0;
+}
+
+/*=============================post.html============================*/
+.post-pic {
+  width: 100%;
+  height: 400px;
+  background-image: url('https://picsum.photos/1000/400');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*===========================registro.html===========================*/
+.registro-header {
+  height: 400px;
+}
+
+.registro-titulo {
+  margin-top: 80px;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ocupará el 100% del viewport no importa su tamaño. */
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: purple;
+}
+
+section {
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+  min-height: 850px;
+  background-color: red;
+  margin: 0 auto;
+}

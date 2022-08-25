@@ -1,0 +1,21 @@
+/* LAS 1RAS DOS REGLAS DEBE DE ESTAR SIEMPRE EN NUESTRO ARCHIVOS DE ESTILOS */
+
+/* Para no tener problemas con los tamaños de los contenedres
+  reiniciamos estos estilos. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Seteamos el tamaño de la etiqueta en 62.5%, es decir, a 10px */
+/* Calculo que hace el navegador es "16px - 62.5% = 10px" */
+html {
+  font-size: 62.5%;
+}
+p {
+  font-size: 1.6rem;
+}
+main div {
+  font-size: 1.6rem;
+}

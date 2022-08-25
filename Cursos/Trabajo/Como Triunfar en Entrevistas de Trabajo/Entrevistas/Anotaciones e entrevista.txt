@@ -1,0 +1,71 @@
+Conocimientos
+- Lenguajes de programación:
+  * PHP, Python, NodeJS, Java, algunos conocimientos en Go (no lo he trabajado profesionalmente en el día a día, pero si realice cursos del mismo.)
+- Bases de datos:
+  * MySQL, SQL Server, conocimientos en PostgreSQL (no lo trabaje profesionalmente, pero si he hecho cursos y tengo conocimientos de su funcionamiento.)
+- Patrones de diseño:
+  * MVC (Model View Controller)
+  * MVP (Model View Presenter)
+  * MVVM (Model View View Model)
+- Sistemas Operativos: 
+  * Windows Server 2008
+  * Windows Server 2016
+  * Debian
+  * Ubuntu Server 14.
+
+Experiencias
+  * Desarrollo de chatbot (Facebook, Instagram, WhatsApp y Web)
+  * PHP, Python, NodeJS.
+  * MySQL.
+  * SQL Server.
+  * Ubuntu Server.
+  * Dialogflow.
+  * API Rest.
+
+Habilidades
+  * Autodidacta: Estar en constante aprendizaje.
+  * Fexible: Enfocarse en lo que se tiene que hacer para llegar a la solución o cumplir con el objetivo contemplando solo lo que se tiene a la mano.
+  * Creativo: Para resolver problemas y aportar soluciones.
+  * Adaptarse a las situaciones y circunstancias del día a día.
+  * Colaboración y trabajo en equipo.
+  * Comunicación efectiva  (ideas, sugerencias, resultados, propuestas, etc).
+  * Apacionado por la programación.
+  * Manejo del tiempo: Definir prioridades y dar tiempos de entrega estimados, lo cual eso evitará dolores de cabeza a futuro.
+
+Valores y actitudes
+  * Honestidad.
+  * Ayudar.
+  * Respetuoso.
+  * Me gusta cuando el equipo de trabajo se toma enserio el trabajo y lo hacen con animo, gusto y la mejor predisposición posible.
+  * No me doy por vencido ante una dificultad.
+  * Curioso, siempre aprendiendo nuevas cosas.
+  * Me gusta el entender y comprender las cosas.
+
+FORTALEZAS
+  * Compromiso, honestidad, responsabilidad, trabajar en equipo.
+DEBILIDADES
+  * Realmente creo que no tengo ninguna, por ahí podría reforzar algunas habilidades como por ej, algunas métodologias, comunicación efectiva para mejorar mi comunicación.
+
+¿QUIÉN ERES TÚ?
+  * Soy un desarrollador backend ssr que me desempeño hoy por hoy en diferentes tecnologías como, Python, NodeJS, PHP. Pero siempre estoy en constante aprendisaje incorporando nuevos     conocimientos.
+
+¿POR QUÉ DEBEMOS CONTRATARTE?
+  * Porque soy un candidato dispuesto a comprometerce con las actividades que requiere la vacante ya que tengo expreriencias previas en desarrollos, metodologías, lenguajes de programación,     habilidades para resolver un problema.
+
+¿QUÉ ES LO PEOR QUE ESPERAMOS DE TÍ SI TE CONTRATAMOS?
+  * Honestamente, creo que nada, porque voy a dar lo mejor de mi en este trabajo como lo he hecho en otras oportunidades en otros trabajos, siempre he estado colaborando activamente con mis ideas y miscompañeros, realmente considero no hay nada malo que puedan esperar de mí.
+
+¿POR QUÉ NO DEBEMOS DE CONTRATATE?
+  * No me contraten sí consideran que hay otro candidato con mejor perfil para esta vacante.
+
+¿A QUÉ JUGABAS DE NIÑO?
+  * Jugaba con los autitos de juguetes, con mi perro que tenia en ese momento, jugabamos al futbol, el atajaba y yo pateaba al arco.
+  * Cuando tenia unos 8 a 9 años de edad conocí por primera vez una computadora y a partyir de allí mi curiosidad despertó por el saber de como funcionaba esa caja mágica por dentro.
+
+HOBBIES
+  * Hacer cursos de programación, leer, películas, Series.
+
+¿CUAL FUE TU PRINCIPAL LOGRO EN TU ANTERIOR TRABAJO?
+  * Resolver problemas con software para lo cual fui contratado. En ese momento era un desarrollador junior que recién salia de mis estudios terciarios y poder resolver problemas de la vida real con algoritmos para mi fue un logro realmente en ese momento. 
+¿CUAL FUE TU PRINCIPAL LOGRO EN TU TRABAJO ACTUAL?
+  * La refactorización de código e implementar las mejores practicas desarrollo para reducir los tiempos de desarrollos y poder entregar un producto lo más rápido posible.

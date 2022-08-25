@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <title>this</title>
+</head>
+
+<body>
+  <a href="/ejercicios/">Go back</a>
+  <p><em>Abre la consola</em></p>
+
+  <h1>
+    <code>this</code> se refiere a un objeto. Ese objeto es el que actualmente
+    está ejecutando un pedazo de código.
+  </h1>
+
+  <script>
+
+    /*============================================================this en el scope global=============================================================*/
+
+    console.log(`this: ${this}`); // Siempre que usemos 'this' en el contexto global el navegador lo asignará a 'windows'
+
+    /*==========================================================='this' en el scope de una función====================================================*/
+
+    /*
+      Hará referencia a 'windows', siempre y cuando sea llamada como una simple función y no como método de una instancia, ej: myInstancia.whoIsThis();
+      excepto que estemos usando 'strict mode'
+    */
+    function whoIsThis() {
+      return this;
+    }
+
+    console.log(`whoIsThis(): ${whoIsThis()}`);
+
+    /*================================================='this' en el scope de una función en strict mode=================================================*/
+
+    /*
+      Sí imprimimos por consola nos saldrá 'undefined'.
+      El modo estricto nos sirve para evitar algunos errores que le pueden pasar a cualquier programador,
+      estos errores nos van a salir temprano, es decir, durante la fase de desarrollo y no en producción.
+    */
+    function whoIsThisStrict() {
+      'use strict';
+      return this;
+    }
+
+    console.log(`whoIsThisStrict(): ${whoIsThisStrict()}`);
+
+    /*=====================================================this en el contexto de un objeto============================================================*/
+    const person = {
+      name: 'Gabriel',
+      saludar: function () {
+        console.log(`Hola soy ${this.name}`);
+      },
+    };
+
+    person.saludar(); //---> Imprimirá 'Hola soy Gabriel'
+
+    /*===============================================this cuando sacamos a una función de un objeto===================================================*/
+
+    const accion = person.saludar;
+    accion(); // ---> Imprimirá 'Hola soy '
+
+    /*================================================='this' en el contexto de una "clase"===========================================================*/
+
+    /*
+      'this' en un contexto de clases hace referencia a la instancia del objeto y no a la clase, en este caso en el ej, hace referencia a 'angela'.
+    */
+    function Person(name) {
+      // this = {} ---> No se puede asignar this directamente, pero si una propiedad de this.
+      this.name = name;
+    }
+
+    // Si queremos darle un método, se lo agregamos al 'prototype'
+    Person.prototype.saludar = function () {
+      console.log(`Me llamo ${this.name}`);
+    };
+
+    const angela = new Person('Angela');
+    angela.saludar(); // ---> Imprimirá 'Me llamo Angela'
+  </script>
+</body>
+
+</html>
