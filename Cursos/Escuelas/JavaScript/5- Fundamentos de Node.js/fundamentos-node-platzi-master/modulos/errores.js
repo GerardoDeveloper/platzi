@@ -7,16 +7,24 @@ function serompe() {
 }
 
 function seRompeAsincrona(cb) {
-    setTimeout(function () {
+    setTimeout(() => {
+        /**
+         * Cuando se tiene un método o función asincrona,
+         * se debe detectar el error, si no se detecta
+         * puede y parará el hilo principal.
+         */
         try {
             return 3 + z;
         } catch (err) {
             console.error('Error en mi función asícnrona');
             cb(err);
         }
-    })
+    });
 }
 
+/**
+ * Método para detectar un error en el hilo principal.
+ */
 try {
     //otraFuncion();
     seRompeAsincrona(function (err) {

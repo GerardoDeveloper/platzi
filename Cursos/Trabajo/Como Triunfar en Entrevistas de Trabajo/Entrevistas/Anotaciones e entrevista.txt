@@ -53,7 +53,7 @@ DEBILIDADES
   * Porque soy un candidato dispuesto a comprometerce con las actividades que requiere la vacante ya que tengo expreriencias previas en desarrollos, metodologías, lenguajes de programación,     habilidades para resolver un problema.
 
 ¿QUÉ ES LO PEOR QUE ESPERAMOS DE TÍ SI TE CONTRATAMOS?
-  * Honestamente, creo que nada, porque voy a dar lo mejor de mi en este trabajo como lo he hecho en otras oportunidades en otros trabajos, siempre he estado colaborando activamente con mis ideas y miscompañeros, realmente considero no hay nada malo que puedan esperar de mí.
+  * Honestamente, creo que nada, porque voy a dar lo mejor de mi en este trabajo como lo he hecho en otras oportunidades en otros trabajos, siempre he estado colaborando activamente con mis ideas y mis compañeros, realmente considero no hay nada malo que puedan esperar de mí.
 
 ¿POR QUÉ NO DEBEMOS DE CONTRATATE?
   * No me contraten sí consideran que hay otro candidato con mejor perfil para esta vacante.
@@ -63,7 +63,7 @@ DEBILIDADES
   * Cuando tenia unos 8 a 9 años de edad conocí por primera vez una computadora y a partyir de allí mi curiosidad despertó por el saber de como funcionaba esa caja mágica por dentro.
 
 HOBBIES
-  * Hacer cursos de programación, leer, películas, Series.
+  * Hacer cursos de programación, leer, películas, Series, juntarme con amigos.
 
 ¿CUAL FUE TU PRINCIPAL LOGRO EN TU ANTERIOR TRABAJO?
   * Resolver problemas con software para lo cual fui contratado. En ese momento era un desarrollador junior que recién salia de mis estudios terciarios y poder resolver problemas de la vida real con algoritmos para mi fue un logro realmente en ese momento. 

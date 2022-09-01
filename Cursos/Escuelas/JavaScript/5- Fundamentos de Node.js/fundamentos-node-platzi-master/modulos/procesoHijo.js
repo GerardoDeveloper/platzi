@@ -10,7 +10,25 @@ exec('node modulos/consola.js', (err, stdout, sterr) => {
     }
 
     console.log(stdout);
-})
+});
+
+/**
+ * Lista los archivos en linux.
+ */
+exec('ls -al', (error, stdout, sterr) => {
+    /**
+     * error: El error.
+     * stdout: Es la salida principal estándar.
+     * sterr: Error estandar.
+     */
+
+    if (error) {
+        console.error(error);
+        return false;
+    }
+
+    console.log(stdout);
+});
 
 /**
  * Se utiliza cuando se quiere que un proceso hijo devuelva datos enormes.
@@ -21,14 +39,14 @@ console.log(proceso.pid); // El PID del proceso.
 console.log(proceso.connected); // Sí esta conectado o no.
 
 // Detecta cuando hay datos.
-proceso.stdout.on('data', function (dato) {
+proceso.stdout.on('data', (dato) => {
     console.log('¿Está muerto?');
     console.log(proceso.killed); // Mata un proceso.
     console.log(dato.toString()) // Lista el contenido del directorio.
 });
 
 // Detecta cuando el proceso se termina.
-proceso.on('exit', function() {
+proceso.on('exit', () => {
     console.log('el proeso terminó');
     console.log(proceso.killed) // Mata un proceso.
-})
+});
