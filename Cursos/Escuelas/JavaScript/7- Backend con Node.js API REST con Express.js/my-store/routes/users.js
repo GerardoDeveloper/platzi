@@ -6,7 +6,7 @@ const service = new UserService();
 
 // Parámetros tipo query
 router.get('/', (request, response) => {
-  const { limit, offset } = request.query; // <--- obtiene los parámetros tipo query.
+  const { limit, offset } = request.query; // ---> Obtiene los parámetros tipo query.
 
   // Valida si vienen parámetros.
   if (limit && offset) {
@@ -23,7 +23,7 @@ router.get('/', (request, response) => {
 
 // POST
 router.post('/', (request, response) => {
-  const body = request.body;
+  const body = request.body; // Desde el objeto 'body' sacamos todo el cuerpo de la petición que se haga desde el cliente.
   const data = {
     message: "created",
     data: body
@@ -34,8 +34,8 @@ router.post('/', (request, response) => {
 
 // PUT
 router.put('/:id', (request, response) => {
-  const { id } = request.params;
-  const body = request.body; // Sacamos el cuerpo de la petición.
+  const { id } = request.params; // --> Obtenemos los parámetros.
+  const body = request.body; // ---> Sacamos el cuerpo de la petición.
   const data = {
     id,
     message: "update put",
@@ -47,8 +47,8 @@ router.put('/:id', (request, response) => {
 
 // PATCH
 router.patch('/:id', (request, response) => {
-  const { id } = request.params;
-  const body = request.body; // Sacamos el cuerpo de la petición.
+  const { id } = request.params; // ---> Obtenemos los parámetros.
+  const body = request.body; // ---> Sacamos el cuerpo de la petición.
   const data = {
     id,
     message: "update patch",
@@ -60,7 +60,7 @@ router.patch('/:id', (request, response) => {
 
 // DELETE
 router.delete('/:id', (request, response) => {
-  const { id } = request.params;
+  const { id } = request.params; // ---> Obtenemos los parámetros.
   const data = {
     id,
     message: "deleted"

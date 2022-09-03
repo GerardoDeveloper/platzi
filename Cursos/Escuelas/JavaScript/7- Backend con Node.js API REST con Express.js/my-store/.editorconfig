@@ -1,4 +1,5 @@
 # Estas configuracioes formatea nuestro editor con las mismas configuraciones para todos los desarrolladores.
+# NOTA: Se debe tener instalada la extensión 'EdtorConfig for VS Code'
 
 # Editor configuration, see https://editorconfig.org
 root = true

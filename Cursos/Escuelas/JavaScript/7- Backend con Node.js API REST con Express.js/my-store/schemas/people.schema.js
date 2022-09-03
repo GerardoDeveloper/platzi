@@ -1,14 +1,14 @@
-const joi = require('joi');
+const Joi = require('joi');
 
-const id = joi.string().uuid();
-const name = joi.string().min(5).max(15);
-const lastName = joi.string().min(5).max(15);
-const old = joi.number().integer().min(1).max(50);
+const id = Joi.string().uuid();
+const name = Joi.string().min(5).max(15);
+const lastName = Joi.string().min(5).max(15);
+const old = Joi.number().integer().min(1).max(50);
 
 /**
  * Cuando se crea un nuevo schema.
  */
-const createPeopleSchema = joi.object({
+const createPeopleSchema = Joi.object({
   name: name.required(),
   lastName: lastName.required(),
   old: old.required(),
@@ -17,7 +17,7 @@ const createPeopleSchema = joi.object({
 /**
  * Cuando se actualiza un schema.
  */
-const updatePeopleSchema = joi.object({
+const updatePeopleSchema = Joi.object({
   name: name,
   lastName: lastName,
 });
@@ -25,7 +25,7 @@ const updatePeopleSchema = joi.object({
 /**
  * Cuando se obtiene un schema por id.
  */
-const getPeopleSchema = joi.object({
+const getPeopleSchema = Joi.object({
   id: id.required(),
 });
 

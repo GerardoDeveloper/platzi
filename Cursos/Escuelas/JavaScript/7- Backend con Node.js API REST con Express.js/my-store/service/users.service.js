@@ -10,6 +10,9 @@ class UserService {
     this.generate();
   }
 
+  /**
+   * Genera 100 productos.
+   */
   generate() {
     const limit = 100;
     for (let i = 0; i < limit; i++) {
@@ -26,6 +29,10 @@ class UserService {
 
   }
 
+  /**
+   * Retorna la lista de productos.
+   * @returns array
+   */
   find() {
     return this.arrayProducts;
   }
@@ -43,4 +50,5 @@ class UserService {
   }
 }
 
+// Exportación de clase.
 module.exports = UserService;

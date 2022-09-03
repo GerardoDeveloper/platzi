@@ -1,5 +1,5 @@
 /**
- * Este script centraliza todas las rutas de manera modular.
+ * Este script centraliza (configura) todas las rutas de manera modular.
  */
 
 const express = require('express'); // importa el modulo de express.
@@ -15,6 +15,8 @@ const usersRouter = require('./users.js');
 function routerApi(app) {
   const router = express.Router(); // Creamos los routes.
   app.use('/api/v1', router); // Creamos una ruta global para todos los endpoint que será común a todas.
+
+  // Una vez que se setee la ruta global en el objeto'router' utilizamos 'router'
   router.use('/', homeRouter); // home.
   router.use('/people', peopleRouter); // lista todas las personas personas.
   router.use('/typePeople', typePeopleRouter); // Obtiene un producto de una categoria especifica.

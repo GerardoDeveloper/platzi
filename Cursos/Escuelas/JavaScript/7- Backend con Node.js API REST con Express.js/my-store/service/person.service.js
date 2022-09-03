@@ -24,6 +24,9 @@ class PersonService {
     }
   }
 
+  /**
+   * Crea una nueva persona.
+   */
   create(data) {
     const newPerson = {
       id: casual.uuid,
@@ -35,6 +38,10 @@ class PersonService {
     return newPerson;
   }
 
+  /**
+   * Retorna la lista de productos.
+   * @returns Promise
+   */
   find() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -43,6 +50,11 @@ class PersonService {
     });
   }
 
+  /**
+   * Devuelve una persona según su id.
+   * @param {string} id
+   * @returns
+   */
   async findOne(id) {
     const person = this.arrayPerson.find(item => item.id === id);
 
@@ -50,6 +62,7 @@ class PersonService {
       throw boom.notFound('person not found');
     }
 
+    // Chequeamos sí esta bloqueado.
     if (person.isBlocked) {
       throw boom.conflict('person is blocked');
     }
@@ -57,8 +70,14 @@ class PersonService {
     return person;
   }
 
+  /**
+   * Actualiza los datos de una persona.
+   * @param {string} id Id de la persona que se quiere editar.
+   * @param {*} changes
+   * @returns
+   */
   async update(id, changes) {
-    const index = this.arrayPerson.findIndex(item => item.id === id); // El método 'findIndex' retorna el indice de un objeto.
+    const index = this.arrayPerson.findIndex(item => item.id === id); // El método 'findIndex' retorna el indice y/o posisión de un objeto dentro de un array.
 
     if (index === -1) {
       throw boom.notFound('person not found');
@@ -66,13 +85,18 @@ class PersonService {
 
     const person = this.arrayPerson[index];
     this.arrayPerson[index] = {
-      ...person,
-      ...changes
+      ...person, // Almacenamos la información anterior, es decir, la persistimos.
+      ...changes // Aplicamos los nuevos cambios.
     };
 
     return this.arrayPerson[index];
   }
 
+  /**
+   * Elimina una persona.
+   * @param {string} id
+   * @returns
+   */
   async delete(id) {
     const index = this.arrayPerson.findIndex(item => item.id === id); // El método 'findIndex' retorna el indice de un objeto.
 
@@ -87,4 +111,5 @@ class PersonService {
   }
 }
 
+// Exportación de la clase.
 module.exports = PersonService;
