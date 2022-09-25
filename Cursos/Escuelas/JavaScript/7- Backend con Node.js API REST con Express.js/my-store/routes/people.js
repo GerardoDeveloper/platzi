@@ -60,7 +60,7 @@ router.post('/', validatorHandler(createPeopleSchema, 'body'), async (request, r
  *
  * Este método es especial, porque toma los datos desde 'params' y 'body',
  * por está razón se pueden ejecutar un middleware para cada uno y así poder
- * validar losdatos provenientes desde params y body.
+ * validar los datos provenientes desde params y body.
  */
 router.put('/:id', validatorHandler(updatePeopleSchema, 'params'), validatorHandler(createPeopleSchema, 'body'), async (request, response, next) => {
   try {

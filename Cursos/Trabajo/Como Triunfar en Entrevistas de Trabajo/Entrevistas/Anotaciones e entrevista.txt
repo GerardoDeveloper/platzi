@@ -21,6 +21,7 @@ Experiencias
   * Ubuntu Server.
   * Dialogflow.
   * API Rest.
+  * App desktop.
 
 Habilidades
   * Autodidacta: Estar en constante aprendizaje.
@@ -30,13 +31,13 @@ Habilidades
   * Colaboración y trabajo en equipo.
   * Comunicación efectiva  (ideas, sugerencias, resultados, propuestas, etc).
   * Apacionado por la programación.
-  * Manejo del tiempo: Definir prioridades y dar tiempos de entrega estimados, lo cual eso evitará dolores de cabeza a futuro.
+  * Manejo del tiempo: Definir prioridades y dar tiempos de entrega estimados.
 
 Valores y actitudes
   * Honestidad.
   * Ayudar.
   * Respetuoso.
-  * Me gusta cuando el equipo de trabajo se toma enserio el trabajo y lo hacen con animo, gusto y la mejor predisposición posible.
+  * Me gusta cuando el equipo de trabajo se toma enserio las tareas y lo hacen con animo, gusto y la mejor predisposición.
   * No me doy por vencido ante una dificultad.
   * Curioso, siempre aprendiendo nuevas cosas.
   * Me gusta el entender y comprender las cosas.
@@ -50,7 +51,7 @@ DEBILIDADES
   * Soy un desarrollador backend ssr que me desempeño hoy por hoy en diferentes tecnologías como, Python, NodeJS, PHP. Pero siempre estoy en constante aprendisaje incorporando nuevos     conocimientos.
 
 ¿POR QUÉ DEBEMOS CONTRATARTE?
-  * Porque soy un candidato dispuesto a comprometerce con las actividades que requiere la vacante ya que tengo expreriencias previas en desarrollos, metodologías, lenguajes de programación,     habilidades para resolver un problema.
+  * Porque soy un candidato dispuesto a comprometerce con las actividades que requiere la vacante ya que tengo expreriencias previas en desarrollos, metodologías, lenguajes de programación, habilidades para resolver un problema.
 
 ¿QUÉ ES LO PEOR QUE ESPERAMOS DE TÍ SI TE CONTRATAMOS?
   * Honestamente, creo que nada, porque voy a dar lo mejor de mi en este trabajo como lo he hecho en otras oportunidades en otros trabajos, siempre he estado colaborando activamente con mis ideas y mis compañeros, realmente considero no hay nada malo que puedan esperar de mí.
