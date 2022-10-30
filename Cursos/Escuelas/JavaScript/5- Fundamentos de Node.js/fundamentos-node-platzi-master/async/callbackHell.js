@@ -29,7 +29,7 @@ function conversacion(nombre, veces, callback) {
     }
 }
 
-// --
+// Callback hell refactorizado.
 
 console.log('Iniciando proceso...');
 hola('Carlos', function (nombre) {
@@ -39,6 +39,9 @@ hola('Carlos', function (nombre) {
 });
 
 
+/**
+ * Callback hell
+ */
 // hola('Carlos', function (nombre) {
 //     hablar(function () {
 //         hablar(function () {
