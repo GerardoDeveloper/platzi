@@ -7,6 +7,7 @@ Conocimientos
   * MVC (Model View Controller)
   * MVP (Model View Presenter)
   * MVVM (Model View View Model)
+  * The Clean Architecture
 - Sistemas Operativos: 
   * Windows Server 2008
   * Windows Server 2016
@@ -19,7 +20,7 @@ Experiencias
   * MySQL.
   * SQL Server.
   * Ubuntu Server.
-  * Dialogflow.
+  * AI Dialogflow.
   * API Rest.
   * App desktop.
 
@@ -31,7 +32,7 @@ Habilidades
   * Colaboración y trabajo en equipo.
   * Comunicación efectiva  (ideas, sugerencias, resultados, propuestas, etc).
   * Apacionado por la programación.
-  * Manejo del tiempo: Definir prioridades y dar tiempos de entrega estimados.
+  * Manejos de tiempos: Definir prioridades y dar tiempos de entrega estimados.
 
 Valores y actitudes
   * Honestidad.
@@ -54,7 +55,7 @@ DEBILIDADES
   * Porque soy un candidato dispuesto a comprometerce con las actividades que requiere la vacante ya que tengo expreriencias previas en desarrollos, metodologías, lenguajes de programación, habilidades para resolver un problema.
 
 ¿QUÉ ES LO PEOR QUE ESPERAMOS DE TÍ SI TE CONTRATAMOS?
-  * Honestamente, creo que nada, porque voy a dar lo mejor de mi en este trabajo como lo he hecho en otras oportunidades en otros trabajos, siempre he estado colaborando activamente con mis ideas y mis compañeros, realmente considero no hay nada malo que puedan esperar de mí.
+  * Honestamente, creo que nada, porque voy a dar lo mejor de mi en este trabajo como lo he hecho en otras oportunidades en otros trabajos, siempre he estado colaborando activamente con mis ideas y mis compañeros, realmente no hay nada malo que puedan esperar de mí.
 
 ¿POR QUÉ NO DEBEMOS DE CONTRATATE?
   * No me contraten sí consideran que hay otro candidato con mejor perfil para esta vacante.
