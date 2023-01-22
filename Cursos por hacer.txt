@@ -1,0 +1,30 @@
+- Node.js
+	- babel
+	- webpack
+	- mocha
+	- typescript (Indispensable)
+	- microservicios
+	- VueJS.
+	- ReactJs. (Indispensable)
+	- NextJS. (Indispensable)
+	- React Native.
+	- AngularJS.
+	- Redux.
+	- SASS.
+	- LESS. 
+	- SCSS.
+- Go
+- AWS
+- Docker (Indispensable)
+- Kubernetes (Indispensable)
+- DataBase NoSQL
+- GraphQL
+- CI/CD (Indispensable)
+- Infraestructura cloud y serverless.
+- Scrum / Kanban
+- TDD (Indispensable)
+- Seguridad informatica.
+- Administración de servidores.
+- DevOps
+- Laravel
+- Inglés (Indispensable)

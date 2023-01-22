@@ -1,0 +1,26 @@
+Controllers = routes
+Modelo de negocios = Services
+Entites = Sequelize ORM
+
+Organización del código
+- src: Donde se encuentra todo el código.
+  * config: Se encuentra la cofiguración de las variables de entorno. Esto es leido desde el archivo .env
+  * db
+    * migrations: Se encuentran todas las migraciones de la bbdd, las cuales crean toda las estructuras de nuestras tablas de la app.
+    * models: Se encuentran los modelos, es decr, la definición del esquema de cada tabla con sus atributos y join.
+    * seeders (semillas de información): Desde aquí es donde se alimenta una semilla, es decir, para crear dinamicamente los datos para las migraciones.
+  * sequelize.js: Se útiliza mucho en la capa de services para conectarnos a la bbdd por medio del ORM Sequelize. Ahí están todas las configuraciones.
+  * config.js: Es el que conecta hacia la ejecución utilizando el sequelize cli. Esto quiere decir que este script nos sirve para correr comandos como:
+               - Migraciones.
+               - Seed de datos.
+	       Y todo lo que tenga que ver con el uso de la terminal.
+               También es el que maneja las conexiones.
+  * dtos o schemas: Aquí se validan la integridad de los datos de cada request.
+  * graphql: Es donde se encuetran todas las configuraciones de grapql.
+  * moddlewares: Son los encargados de realizar las validaciones de los request antes que lleguen al servidor.
+  * routes: Se encuentras todas las rutas o endpoint de la app.
+  * services: Se conecta a la base de datos con Sequelize y define la lógica de negocios.
+  * utils: Donde se encuentran todas las utilidades necesarias.
+    * strategies: Se utiliza para todo el proceso de autenticación.
+  app.js: Donde se crean todas las configuraciones de la app.
+  index.js: Crea la app y empieza a correrla en un puerto en especifico.
