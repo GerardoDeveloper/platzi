@@ -9,7 +9,7 @@ Covenciones que se siguen en está hoja de estilos.
     4- Temas visuales              --> box-shadow, border-radius, gradient, etc.
     5- Otros                       --> reglas CSS, etc.
 
-  Esto permitirá tener un código organizado y legible entre los distintos desarrolladores 
+  Esto permitirá tener un código organizado y legible entre los distintos desarrolladores
   que modifiquen este archivo en el futuro.
 
 
@@ -23,21 +23,21 @@ Covenciones que se siguen en está hoja de estilos.
   3- #id            0, 0, 1, 0, 0
   4- .class         0, 0, 0, 1, 0
   5- tag (html)     0, 0, 0, 0, 1
-  6- Orden de las fuentes, es decir, es el orden donde mandamos a llamar los estilos.
+  6- Orden de las fuentes, es decir, es el orden donde mandamos a llamar los estilos en el archivo css.
 */
 
 
 
 /* Variables */
-:root{
+:root {
   /*
     El nombre de una variable no debe ser igual al valor.
 
-    Cuando el nombre de la variable está ligada a su valor 
-    perdemos una de sus funciones que es la versatilidad de 
+    Cuando el nombre de la variable está ligada a su valor
+    perdemos una de sus funciones que es la versatilidad de
     cambiar su valor y que todo el diseño cambie con ella, por ej:
     Si tenemos una variable que se llama '--bitcoin-orange: #f7931a;'
-    si luego queremos cambiar el color a un azul, la variable pierde 
+    si luego queremos cambiar el color a un azul, la variable pierde
     todo el sentido porque tiene en el nombre "naranja", pero su valor es "azul"
   */
 
@@ -58,19 +58,19 @@ Covenciones que se siguen en está hoja de estilos.
   --font-inter: 'Inter', sans-serif;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html{
+html {
   font-size: 62.5%;
   font-family: var(--font-DM);
 }
 
 
-header{
+header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -82,14 +82,14 @@ header{
   background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 
-header img{
+header img {
   align-self: center;
   width: 15rem;
   height: 2.4rem;
   margin-top: 6rem;
 }
 
-.header--title-container{
+.header--title-container {
   align-self: center;
   width: 90%;
   min-width: 28.8rem;
@@ -99,15 +99,15 @@ header img{
   text-align: center;
 }
 
-.header--title-container p{
+.header--title-container p {
   margin-top: 2.5rem;
-  font-size:  1.4rem;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--soft-orange);
 }
 
-.header--title-container .header--button{
+.header--title-container .header--button {
   /* El 'position: absolute' toma como 'position relative' a su padre directo, en este caso el header, 
      esto le da el beneficio de posicionarse en cualquier parte del header a 
      pesar que existan mas elementos.
@@ -131,7 +131,7 @@ header img{
   box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
 }
 
-.header--button span{
+.header--button span {
   display: inline-block;
   width: 1.3rem;
   height: 1rem;
@@ -139,13 +139,13 @@ header img{
   background-repeat: no-repeat;
 }
 
-main{
+main {
   width: 100%;
   height: auto;
   background-color: var(--off-white);
 }
 
-.main-exchange-container{
+.main-exchange-container {
   text-align: center;
   width: 100%;
   height: auto;
@@ -153,14 +153,14 @@ main{
   padding-bottom: 3rem;
 }
 
-.main-exchange-container--title{
+.main-exchange-container--title {
   width: 90%;
   min-width: 28.8rem;
   max-width: 90rem;
   margin: 0 auto;
 }
 
-.main-exchange-container .backgroundImg{
+.main-exchange-container .backgroundImg {
   width: 20rem;
   height: 20rem;
   margin: 0 auto;
@@ -172,7 +172,7 @@ main{
   background-repeat: no-repeat;
 }
 
-.main-currency-table{
+.main-currency-table {
   width: 70%;
   min-width: 23.5rem;
   max-width: 50rem;
@@ -181,7 +181,7 @@ main{
   font-family: var(--font-inter);
 }
 
-.main-currency-table .currency-table--title{
+.main-currency-table .currency-table--title {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   font-weight: bold;
@@ -189,7 +189,7 @@ main{
   color: var(--bitcoint-orange);
 }
 
-.currency-table--container{
+.currency-table--container {
   width: 90%;
   min-width: 23rem;
   max-width: 30rem;
@@ -197,12 +197,12 @@ main{
   margin: 0 auto;
 }
 
-.currency-table--container table{
+.currency-table--container table {
   width: 100%;
   height: 100%;
 }
 
-.currency-table--container td{
+.currency-table--container td {
   width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
@@ -211,30 +211,30 @@ main{
   background-color: var(--just-white);
 }
 
-.currency-table--container .table__top-left{
-  border-radius:  1.5rem 0 0 0;
+.currency-table--container .table__top-left {
+  border-radius: 1.5rem 0 0 0;
 }
 
-.currency-table--container .table__top-right{
-  border-radius:  0 1.5rem 0 0;
+.currency-table--container .table__top-right {
+  border-radius: 0 1.5rem 0 0;
 }
 
-.currency-table--container .table__bottom-left{
-  border-radius:  0 0 0 1.5rem;
+.currency-table--container .table__bottom-left {
+  border-radius: 0 0 0 1.5rem;
 }
 
-.currency-table--container .table__bottom-right{
-  border-radius:  0 0 1.5rem 0;
+.currency-table--container .table__bottom-right {
+  border-radius: 0 0 1.5rem 0;
 }
 
-.currency-table--container .table__right{
+.currency-table--container .table__right {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
   color: #757575;
 }
 
-.currency-table--container .down{
+.currency-table--container .down {
   display: inline-block;
   width: 1.5rem;
   height: 1rem;
@@ -245,7 +245,7 @@ main{
   background-repeat: no-repeat;
 }
 
-.currency-table--container .up{
+.currency-table--container .up {
   display: inline-block;
   width: 1.5rem;
   height: 1rem;
@@ -256,7 +256,7 @@ main{
   background-repeat: no-repeat;
 }
 
-.currency-table--date{
+.currency-table--date {
   width: 19rem;
   height: 3rem;
   margin: 0 auto;
@@ -266,13 +266,13 @@ main{
   background-color: var(--soft-orange);
 }
 
-.currency-table--date p{
+.currency-table--date p {
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: var(--warm-black);
 }
 
-.currency-table--date-two{
+.currency-table--date-two {
   width: 19rem;
   height: 3rem;
   margin: 0 auto;
@@ -282,7 +282,7 @@ main{
   border-radius: 0.8rem;
 }
 
-.main-currency-table .currency-table--title-two{
+.main-currency-table .currency-table--title-two {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   font-weight: bold;
@@ -290,14 +290,14 @@ main{
   color: var(--secondary-blue);
 }
 
-.header--title-container h1{
+.header--title-container h1 {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
 }
 
-.main-exchange-container h2{
+.main-exchange-container h2 {
   margin-bottom: 3rem;
   font-size: 2.4rem;
   font-weight: bold;
@@ -305,7 +305,7 @@ main{
   color: var(--black);
 }
 
-.main-exchange-container p{
+.main-exchange-container p {
   margin-bottom: 3rem;
   font-size: 1.4rem;
   font-weight: 500;
@@ -313,7 +313,7 @@ main{
   color: #757575;
 }
 
-.main-product-detail{
+.main-product-detail {
   position: relative;
   width: 100%;
   min-width: 32rem;
@@ -322,7 +322,7 @@ main{
   background-color: var(--warm-black);
 }
 
-.product-detail--batata-logo{
+.product-detail--batata-logo {
   /*  Cuando colocamos un elemento como 'absolute' busca al 1er contenedor padre que tenga
       un elemento con 'position: relative' para poder basarse de ahí.
    */
@@ -335,7 +335,7 @@ main{
 
 }
 
-.product-detail--title{
+.product-detail--title {
   width: 90%;
   min-width: 28.8rem;
   height: auto;
@@ -344,7 +344,7 @@ main{
   text-align: center;
 }
 
-.product-detail--title2{
+.product-detail--title2 {
   width: 90%;
   min-width: 28.8rem;
   height: auto;
@@ -352,7 +352,7 @@ main{
   text-align: center;
 }
 
-.product-detail--title3{
+.product-detail--title3 {
   width: 90%;
   min-width: 28.8rem;
   height: auto;
@@ -360,7 +360,7 @@ main{
   text-align: center;
 }
 
-.product-detail--title h2{
+.product-detail--title h2 {
   margin-bottom: 2rem;
   font-size: 2.4rem;
   font-weight: bold;
@@ -368,7 +368,7 @@ main{
   color: var(--just-white);
 }
 
-.product-detail--title p{
+.product-detail--title p {
   margin-left: 2rem;
   font-size: 1.4rem;
   font-weight: 500;
@@ -376,7 +376,7 @@ main{
   color: #808080;
 }
 
-.product-detail-card{
+.product-detail-card {
   width: 90%;
   min-width: 28.8rem;
   max-width: 40rem;
@@ -388,7 +388,7 @@ main{
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
 }
 
-.product-detail-card .clock{
+.product-detail-card .clock {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -399,7 +399,7 @@ main{
   background-repeat: no-repeat;
 }
 
-.product-detail-card .dollar{
+.product-detail-card .dollar {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -410,7 +410,7 @@ main{
   background-repeat: no-repeat;
 }
 
-.product-detail-card .check{
+.product-detail-card .check {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -421,7 +421,7 @@ main{
   background-repeat: no-repeat;
 }
 
-.product--card-title{
+.product--card-title {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   font-weight: bold;
@@ -429,14 +429,14 @@ main{
   color: var(--just-white);
 }
 
-.product--card-body{
+.product--card-body {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.8rem;
   color: #808080;
 }
 
-.bitcoint-img-container{
+.bitcoint-img-container {
   width: 100%;
   min-width: 32rem;
   height: 50vh;
@@ -447,7 +447,7 @@ main{
   text-align: center;
 }
 
-.bitcoint-img-container h2{
+.bitcoint-img-container h2 {
   padding-top: 6rem;
   font-size: 2.4rem;
   font-weight: bold;
@@ -455,14 +455,14 @@ main{
   color: var(--just-white);
 }
 
-.main-plans-container{
+.main-plans-container {
   width: 100%;
   min-width: 32rem;
   padding-bottom: 7rem;
   text-align: center;
 }
 
-.plans--title{
+.plans--title {
   width: 90%;
   min-width: 28.8rem;
   height: auto;
@@ -470,7 +470,7 @@ main{
   margin-bottom: 5rem;
 }
 
-.plans--title h2{
+.plans--title h2 {
   padding-top: 5rem;
   font-size: 2.4rem;
   font-weight: bolder;
@@ -478,7 +478,7 @@ main{
   color: var(--black);
 }
 
-.plans--title p{
+.plans--title p {
   padding-top: 30px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -489,16 +489,17 @@ main{
 /*
  Scroll horizontal
 */
-.plans-container--slider{
+.plans-container--slider {
   display: flex;
-  gap: 0.5rem; /* realiza un espaciado entre los elementos */
+  gap: 0.5rem;
+  /* realiza un espaciado entre los elementos */
   height: 32rem;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
 
-.plans-container--card{
+.plans-container--card {
   position: relative;
   /*  Nos ayuda hacer foco en cada tarjeta, es decir, la centra automáticamente el elemento al hacer el scroll */
   scroll-snap-align: center;
@@ -513,7 +514,7 @@ main{
   box-shadow: 00.4rem 0.8rem rgba(89, 73, 30, 0.16);
 }
 
-.recommended{
+.recommended {
   position: absolute;
   width: 12rem;
   height: 3.1rem;
@@ -526,7 +527,7 @@ main{
   color: var(--just-white);
 }
 
-.plan-card--title{
+.plan-card--title {
   padding-top: 3rem;
   font-size: 1.4rem;
   font-weight: 500;
@@ -534,7 +535,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--price{
+.plan-card--price {
   padding: 0.5rem 0;
   font-size: 5.2rem;
   font-weight: bold;
@@ -542,7 +543,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--price span{
+.plan-card--price span {
   position: relative;
   bottom: 2.5rem;
   right: 1rem;
@@ -550,12 +551,12 @@ main{
   font-weight: 300;
 }
 
-.plan-card--saving{
+.plan-card--saving {
   font-size: 1.2rem;
   color: #757575;
 }
 
-.plan-card--ca{
+.plan-card--ca {
   width: 15rem;
   height: 4.8rem;
   margin-top: 2rem;
@@ -569,7 +570,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--ca span{
+.plan-card--ca span {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -577,7 +578,7 @@ main{
   vertical-align: text-bottom;
 }
 
-.plans-container--card2{
+.plans-container--card2 {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
@@ -591,7 +592,7 @@ main{
   box-shadow: 00.4rem 0.8rem rgba(89, 73, 30, 0.16);
 }
 
-.recommended2{
+.recommended2 {
   position: absolute;
   width: 12rem;
   height: 3.1rem;
@@ -604,7 +605,7 @@ main{
   color: var(--just-white);
 }
 
-.plan-card--title2{
+.plan-card--title2 {
   padding-top: 3rem;
   font-size: 1.4rem;
   font-weight: 500;
@@ -612,7 +613,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--price2{
+.plan-card--price2 {
   padding: 0.5rem 0;
   font-size: 5.2rem;
   font-weight: bold;
@@ -620,7 +621,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--price2 span{
+.plan-card--price2 span {
   position: relative;
   bottom: 2.5rem;
   right: 1rem;
@@ -628,12 +629,12 @@ main{
   font-weight: 300;
 }
 
-.plan-card--saving2{
+.plan-card--saving2 {
   font-size: 1.2rem;
   color: #757575;
 }
 
-.plan-card--ca2{
+.plan-card--ca2 {
   width: 15rem;
   height: 4.8rem;
   margin-top: 2rem;
@@ -647,7 +648,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--ca2 span{
+.plan-card--ca2 span {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -655,7 +656,7 @@ main{
   vertical-align: text-bottom;
 }
 
-.plans-container--card3{
+.plans-container--card3 {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
@@ -669,7 +670,7 @@ main{
   box-shadow: 00.4rem 0.8rem rgba(89, 73, 30, 0.16);
 }
 
-.recommended3{
+.recommended3 {
   position: absolute;
   width: 12rem;
   height: 3.1rem;
@@ -682,7 +683,7 @@ main{
   color: var(--just-white);
 }
 
-.plan-card--title3{
+.plan-card--title3 {
   padding-top: 3rem;
   font-size: 1.4rem;
   font-weight: 500;
@@ -690,7 +691,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--price3{
+.plan-card--price3 {
   padding: 0.5rem 0;
   font-size: 5.2rem;
   font-weight: bold;
@@ -698,7 +699,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--price3 span{
+.plan-card--price3 span {
   position: relative;
   bottom: 2.5rem;
   right: 1rem;
@@ -706,12 +707,12 @@ main{
   font-weight: 300;
 }
 
-.plan-card--saving3{
+.plan-card--saving3 {
   font-size: 1.2rem;
   color: #757575;
 }
 
-.plan-card--ca3{
+.plan-card--ca3 {
   width: 15rem;
   height: 4.8rem;
   margin-top: 2rem;
@@ -725,7 +726,7 @@ main{
   color: var(--black);
 }
 
-.plan-card--ca3 span{
+.plan-card--ca3 span {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -733,32 +734,32 @@ main{
   vertical-align: text-bottom;
 }
 
-footer{
+footer {
   display: flex;
   width: 100%;
   height: 15rem;
   background-color: var(--bitcoint-orange);
 }
 
-footer section{
+footer section {
   display: flex;
   width: 50%;
   justify-content: center;
   align-items: center;
 }
 
-footer .left ul{
+footer .left ul {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   list-style: none;
 }
 
-.left li{
+.left li {
   margin: 1rem 0;
 }
 
-.left a{
+.left a {
   text-decoration: none;
   color: var(--just-white);
 }
