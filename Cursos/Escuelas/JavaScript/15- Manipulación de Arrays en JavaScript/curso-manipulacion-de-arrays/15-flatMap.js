@@ -12,7 +12,7 @@ console.log("rta", rta); // [ 'Nice', 'Cute', 'Lovely', 'Nice', 'Cool' ]
  * Primero realiza la iteración de los elementos del array (como si fuera map), y
  * después los aplana en una sola profundidad (como si fuera flat).
  *
- * NOTA: flatMap solo permite un nicel de aplastamiento de 1 sólo nivel.
+ * NOTA: flatMap solo permite un nivel de aplastamiento.
  */
 const rta2 = users.flatMap((user) => user.attributes);
 console.log("map-flat", rta); // [ 'Nice', 'Cute', 'Lovely', 'Nice', 'Cool' ]
