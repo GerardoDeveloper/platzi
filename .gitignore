@@ -684,3 +684,4 @@ $RECYCLE.BIN/
 /Instaladores
 /Cursos/Escuelas/Desarrollo\ backend\ con\ PHP/Intermedio\ de\ PHP\ Entornos\ Virtuales\ y\ Funciones\ Avanzadas/virtualization/
 postgres_data
+*.env
