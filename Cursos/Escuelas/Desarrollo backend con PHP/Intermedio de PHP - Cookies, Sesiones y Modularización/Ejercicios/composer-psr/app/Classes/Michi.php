@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Para que PSR-4 autocargue las clases y los namespace:
- *  - El nombre de la clase debe de ser igual al nombre del archivo.
- *  - El namespace debe ser la ruta donde está el archivo.
+ * Para que PSR-4 autocargue las clases y los namespace se deben cumplir las siguientes condiciones:
+ *  ? - El nombre de la clase debe de ser igual al nombre del archivo.
+ *  ? - El namespace debe ser igual a la carpeta donde se encuentra el archivo. NOTA: El 'namespace' debe ser igual a que se colocó en el archivo 'composer.json'
  * De otro modo no funcionará.
  */
 namespace App\Classes;
