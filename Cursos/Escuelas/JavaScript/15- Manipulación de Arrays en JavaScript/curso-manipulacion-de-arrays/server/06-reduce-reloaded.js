@@ -50,4 +50,4 @@ const rta1 = data
     return obj;
   }, {});
 
-console.log(rta1);
+console.log('rta1', rta1);

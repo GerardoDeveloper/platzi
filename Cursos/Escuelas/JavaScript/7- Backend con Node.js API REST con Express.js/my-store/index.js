@@ -4,7 +4,7 @@ const cors = require('cors');
 const { logErrors, errorHandler, boomErrorHandler } = require('./middleware/error.handler'); // Importamos nuestros middlewares de manejadores de errores.
 
 const app = express(); // Creamos una app.
-app.use(express.json()); // ---> Utilizamos este middleware para recibir y leer formatos json utilizando el método POST.
+app.use(express.json()); // ---> Utilizamos este middleware nativo de express para recibir y leer formatos json utilizando el método POST.
 // app.use(cors()); // ---> De esta forma le damos acceso a cualquier origen.
 
 const wehiteList = ['http://127.0.0.1:5500', 'https://myapp.com'];

@@ -14,9 +14,9 @@ const usersRouter = require('./users.js');
 // Definimos los endpoint.
 function routerApi(app) {
   const router = express.Router(); // Creamos los routes.
-  app.use('/api/v1', router); // Creamos una ruta global para todos los endpoint que será común a todas.
+  app.use('/api/v1', router); // Creamos una ruta global o maestra para todos los endpoint que será común a todas.
 
-  // Una vez que se setee la ruta global en el objeto'router' utilizamos 'router'
+  // Una vez que se setee la ruta global en el objeto 'router' utilizamos 'router'
   router.use('/', homeRouter); // home.
   router.use('/people', peopleRouter); // lista todas las personas personas.
   router.use('/typePeople', typePeopleRouter); // Obtiene un producto de una categoria especifica.
@@ -29,6 +29,8 @@ function routerApi(app) {
      app.use('/api/v2');
      router.use('/', otherRouter);
      ...etc
+
+    Esto puede ser en otra función o otro script index.js
    */
 }
 

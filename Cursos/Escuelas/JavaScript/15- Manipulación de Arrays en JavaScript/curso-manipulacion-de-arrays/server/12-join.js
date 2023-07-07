@@ -22,7 +22,7 @@ console.log(acumulator) // 'hola//como/estas'
  * join une los elementos del array, mediante una separación, y retorna un string. Si un elemento es undefined o null, se convierte en una cadena vacía.
  */
 const resultado = elements.join("/")
-console.log(resultado) // 'hola//como/estas'
+console.log(resultado) // 'hola/como/estas'
 
 // split
 

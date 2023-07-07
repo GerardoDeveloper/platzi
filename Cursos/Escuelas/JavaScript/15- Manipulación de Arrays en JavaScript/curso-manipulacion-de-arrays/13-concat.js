@@ -3,7 +3,7 @@ const othersElements = [3, 3, 4, 4];
 
 // Con for
 
-// const newArray = elements; //  --> De esta manera se clona un array, pero con la referencia de memoria del array original puiendoo producir efectoss secundarios.
+// const newArray = elements; //  --> De esta manera se clona un array, pero con la referencia de memoria del array original puiendo producir efectos secundarios.
 const newArray = [...elements]; //  --> Para clonar un array sin la referencia de memoria del array original, utilizamos spread operator (operador de propagación)
 
 for (let index = 0; index < othersElements.length; index++) {
