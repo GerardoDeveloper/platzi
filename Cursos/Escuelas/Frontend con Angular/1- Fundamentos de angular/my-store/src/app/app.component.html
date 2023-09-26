@@ -1,0 +1,251 @@
+<!-- String interpolation -->
+<h1>String interpolation</h1>
+<p>{{ "Hola mi nombre es: " + name.toUpperCase() + ' y tengo ' + age }}</p>
+
+<!--
+  ¿Cuándo usar string interpolation?
+- Estring interpolation nos sirve mucho para ingresar contenidos como por ej, en un parrafo, h1 donde necesitamos renderizarlo de alguna manera.
+- Sólo sí se esta utulizando valores de tipo string.
+-->
+<img src={{img}} alt="image">
+
+<hr>
+
+<!-- Property binding -->
+<h1>Property binding</h1>
+<!--
+  ¿Cuando usar property binding?
+- Estos son especificos para propiedades.
+- Se utilizan en casos de manipulación de objetos, números y todo aquello que no sea un string.
+-->
+<button [disabled]="btnDisabled">Enviar</button>
+
+<input type="text" [value]="name">
+
+<progress max="100" [value]="age"></progress>
+<img width="100" [src]="img" alt="">
+
+<hr>
+
+<!-- Utilizando objetos con property binding -->
+<button [disabled]="btnDisabled">Enviar</button>
+
+<input type="text" [value]="person.name">
+
+<progress max="100" [value]="person.age"></progress>
+<img width="100" [src]="person.avatar" alt="">
+
+<hr>
+
+<!-- Event Binding -->
+<h1>Event Binding</h1>
+<button (click)="toggleButton()">Toggle button</button>
+
+<p>Edad {{person.age}}</p>
+<button (click)="increaseAge()">Age ++</button>
+
+<div class="box" (scroll)="onScroll($event)">
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repudiandae delectus perspiciatis ex ea neque
+    earum, facilis asperiores voluptates soluta ad quia, repellat esse quasi quae voluptas vero corrupti veniam?</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repudiandae delectus perspiciatis ex ea neque
+    earum, facilis asperiores voluptates soluta ad quia, repellat esse quasi quae voluptas vero corrupti veniam?</p>
+</div>
+
+<!-- Leer eventos en los Input -->
+<p>Nombre {{person.name}}</p>
+<input type="text" [value]="person.name" (keyup)="changeName($event)">
+
+<hr>
+
+<!-- Data binding con ngModel -->
+<h1>Data binding con ngModel</h1>
+
+<!-- NOTA: Con '#nameInput' se puede colocar el nombre personalizado a un input -->
+<p>Nombre: {{ person.name }}</p>
+<input type="text" #nameInput="ngModel" [(ngModel)]="person.name" required>
+<p>Valid: {{ nameInput.valid }}</p>
+
+<p>Edad: {{ person.age }}</p>
+<input type="number" #ageInput="ngModel" [(ngModel)]="person.age" required max="18" min="10">
+<p>Valid: {{ ageInput.valid }}</p>
+
+<hr>
+
+<!--Estructuras de control-->
+
+<h1>*ngif</h1>
+
+<!-- if -->
+<input type="text" [(ngModel)]="person.name">
+<p *ngIf="person.name === 'Gerardo'">Soy Gerardo</p>
+<p *ngIf="person.name === 'Esteban' && person.age === 18">Soy Esteban</p>
+
+<!-- else -->
+<hr>
+<h1>else</h1>
+
+<input type="text" [(ngModel)]="person.name">
+<p *ngIf="person.name === 'Gerardo'; else elseBloque">Soy Gerardo</p>
+<!-- En caso de que el if se cumpla, se muestra el tag 'p' -->
+<!-- En caso de que el if no se cumpla, se muestra el tag 'ng-template' NOTA: Con '#elseBloque' hace referencia al nombre de 'ng-template'  -->
+<ng-template #elseBloque>
+  <p>Soy un bloque else</p>
+</ng-template>
+
+
+<!-- *ngFor -->
+<hr>
+<h1>*ngFor</h1>
+
+<!-- Agregar un valor al array de forma dinámica -->
+<input type="text" [(ngModel)]="newName">
+<button (click)="addName()">Add name</button>
+
+<ul>
+  <!-- Iteración de los valores del array -->
+  <li *ngFor="let name of listNames">
+    {{ name }}
+  </li>
+
+  <!-- Para obtener el indice y el valor del array -->
+  <li *ngFor="let name of listNames; index as i">
+    {{ i }} - {{ name }}
+  </li>
+</ul>
+
+<!-- Eliminar un elemento del array -->
+<input type="text" [(ngModel)]="newName">
+<ul>
+  <!-- Para obtener el indice y el valor del array -->
+  <li *ngIf="listNames.length === 0">Ya no hay más nombres</li>
+  <li *ngFor="let name of listNames; index as i">
+    {{ i }} - {{ name }}
+    <button (click)="deleteName(i)">Delete name</button>
+  </li>
+</ul>
+
+<!-- *ngFor Object -->
+<hr>
+<h1>*ngFor Object</h1>
+
+<!-- NOTA: ngFor sólo funciona en objetos que se puedan iterar, es decir, array. -->
+
+<div class="products--grid">
+  <div *ngFor="let product of products">
+    <img width="250" [src]="product.image" alt="imege">
+    <h2>{{product.price}}</h2>
+    <p>{{product.name}}</p>
+  </div>
+</div>
+
+
+<!-- ngSwitch -->
+<hr>
+<h1>ngSwitch</h1>
+
+<input type="text" [(ngModel)]="person.name">
+<div [ngSwitch]="person.name">
+  <p *ngSwitchCase="'Gerardo'">La persona es Gerardo</p>
+  <p *ngSwitchCase="'Julian'">La persona es Julian</p>
+  <p *ngSwitchCase="'Camila'">La persona es Camila</p>
+  <p *ngSwitchDefault>No hace match</p>
+</div>
+
+<hr>
+
+<!--
+  Class and style Binding
+  NOTA: Una restricción que tiene el ngModel es que no se puede hacer referencia a una variable
+  antes de declararla, ej:
+
+  Declaramos la variable 'nameInput3'
+  <label>Nombre</label>
+  <input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name">
+
+  Pero si hacemos
+  <label [style.font-style]="nameInput3.invalid ? 'italic' : 'normal'">Nombre</label>
+  <input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name">
+
+  Se producirá un error de tipo 'NG0100' porque cuando se quiere hacer el cambio de estilos en el label,
+  no encuentra la variable 'nameInput3'
+-->
+<h1>Class and style Binding</h1>
+<input type="text" required #nameInput2="ngModel" [(ngModel)]="person.name">
+
+<!-- Agregar clases dinamicas a los elementos -->
+<p class="message-error" [class.invalid]="nameInput2.invalid">El campo es requerido</p>
+<label>Nombre</label>
+<input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name">
+
+<!-- Estilos inline + condicional-->
+<p [style.font-style]="nameInput3.invalid ? 'italic' : 'normal'">Texto texto texto...</p>
+
+<!-- Agregar estilos de forma dinámica -->
+<div class="styles">
+  <div>
+    <input type="text" [(ngModel)]="widthImg">
+  </div>
+  <div>
+    <img [style.width.px]="widthImg" [src]="person.avatar">
+    <!-- <img [style.width.%]="widthImg" [src]="person.avatar"> -->
+  </div>
+</div>
+<hr>
+
+<!-- NgClass y NgStyle Binding -->
+<h1>NgClass y NgStyle Binding</h1>
+<input type="text" required #nameInput4="ngModel" [(ngModel)]="person.name">
+
+<hr class="line-error"
+  [ngClass]="{
+    'valid': nameInput4.valid,
+    'invalid': nameInput4.invalid
+  }"
+/>
+<p class="message-error" [class.invalid]="nameInput4.invalid">El campo es requerido</p>
+
+<div class="styles">
+  <div>
+    <input type="number" [(ngModel)]="box.width" />
+    <input type="number" [(ngModel)]="box.heigth" />
+
+    <!-- Permite elegir un color de forma dinamica -->
+    <input type="color" [(ngModel)]="box.background" />
+  </div>
+  <div [ngStyle]="{
+    'width.px': box.width,
+    'heigth.px': box.heigth,
+    'background-color': box.background,
+    'display': 'block'
+  }">
+  </div>
+</div>
+
+<hr>
+
+<!-- Formulario de login -->
+<h1>Formulario</h1>
+<form (ngSubmit)="onRegister()" #myForm="ngForm">
+  <div class="input-group">
+    <label for="name">Nombre</label>
+    <!-- El atributo 'name' es recomentable colocarlo, sino en consola angular los mostrará un error. Puede colocarse name="" o [ngModelOptions]="{standalone: true}" si se quiere deshactivarlo -->
+    <input type="text" id="name" [(ngModel)]="register.name" name="name" required>
+    <p>Mensajes de errores</p>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" [(ngModel)]="register.email" name="email" required>
+    <p>Mensajes de errores</p>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" id="password" [(ngModel)]="register.password" name="password" required>
+    <p>Mensajes de errores</p>
+  </div>
+  <!--
+    Cada vez que se utilicen dentro de formularios SIEMPRE se debe colocar el atributo 'type'
+    ya que si no se hace, angular tomara ese botón como el que realiza la acción de enviar los datos del formulario.
+  -->
+  <button [disabled]="myForm.invalid" type="submit">Registrar</button>
+  <!-- <button type="button">Otra accion</button> -->
+</form>

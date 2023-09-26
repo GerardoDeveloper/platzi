@@ -1,0 +1,21 @@
+<!-- <p><input type="text" [(ngModel)]="imgParent"></p> -->
+<!-- Importar otros componentes pasandole un valor estatico -->
+<!-- <app-img img="Este valor viene desde el padre"></app-img> -->
+
+<!-- <hr> -->
+
+<!-- <h1>Pasar valores a un componente de forma dinámica desde el padre al hijo</h1> -->
+<!-- Importar otros componentes pasandole un valor dinámico -->
+<!-- <p><input type="text" [(ngModel)]="imgParent"></p>
+<app-img [img]="imgParent"></app-img> -->
+
+<hr>
+<!-- <h1>Escuchando eventos desde el componente hijo hacia el padre</h1> -->
+<!-- Escuchando eventos desde el componente hijo hacia el padre -->
+<p><input type="text" [(ngModel)]="imgParent"></p>
+
+<button type="button" (click)="toggleImg()">Toogle</button>
+<p>{{showImg}}</p>
+
+<app-img *ngIf="showImg" (loaded)="onLoad($event)" [img]="imgParent"></app-img>
+<app-product [product]="product" *ngFor="let product of products"></app-product>

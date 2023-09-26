@@ -12,7 +12,7 @@ Conocimientos
   * Windows Server 2008
   * Windows Server 2016
   * Debian
-  * Ubuntu Server 14.
+  * Ubuntu Server.
 
 Experiencias
   * Desarrollo de chatbot (Facebook, Instagram, WhatsApp y Web)
@@ -49,7 +49,7 @@ DEBILIDADES
   * Realmente creo que no tengo ninguna, por ahí podría reforzar algunas habilidades como por ej, algunas métodologias, comunicación efectiva para mejorar mi comunicación.
 
 ¿QUIÉN ERES TÚ?
-  * Soy un desarrollador backend ssr que me desempeño hoy por hoy en diferentes tecnologías como, Python, NodeJS, PHP. Pero siempre estoy en constante aprendisaje incorporando nuevos     conocimientos.
+  * Soy un desarrollador que me desempeño hoy por hoy en diferentes tecnologías como, Python, NodeJS, PHP. Pero siempre estoy en constante aprendisaje incorporando nuevos conocimientos.
 
 ¿POR QUÉ DEBEMOS CONTRATARTE?
   * Porque soy un candidato dispuesto a comprometerce con las actividades que requiere la vacante ya que tengo expreriencias previas en desarrollos, metodologías, lenguajes de programación, habilidades para resolver un problema.
@@ -62,12 +62,12 @@ DEBILIDADES
 
 ¿A QUÉ JUGABAS DE NIÑO?
   * Jugaba con los autitos de juguetes, con mi perro que tenia en ese momento, jugabamos al futbol, el atajaba y yo pateaba al arco.
-  * Cuando tenia unos 8 a 9 años de edad conocí por primera vez una computadora y a partyir de allí mi curiosidad despertó por el saber de como funcionaba esa caja mágica por dentro.
+  * Cuando tenia unos 8 a 9 años de edad conocí por primera vez una computadora y a partir de allí mi curiosidad despertó por el saber de como funcionaba esa caja mágica por dentro.
 
 HOBBIES
   * Hacer cursos de programación, leer, películas, Series, juntarme con amigos.
 
 ¿CUAL FUE TU PRINCIPAL LOGRO EN TU ANTERIOR TRABAJO?
-  * Resolver problemas con software para lo cual fui contratado. En ese momento era un desarrollador junior que recién salia de mis estudios terciarios y poder resolver problemas de la vida real con algoritmos para mi fue un logro realmente en ese momento. 
+  * Resolver problemas con software para lo cual fui contratado. En ese momento era un desarrollador junior que recién salia de mis estudios y poder resolver problemas de la vida real con algoritmos para mi fue un logro realmente en ese momento. 
 ¿CUAL FUE TU PRINCIPAL LOGRO EN TU TRABAJO ACTUAL?
   * La refactorización de código e implementar las mejores practicas desarrollo para reducir los tiempos de desarrollos y poder entregar un producto lo más rápido posible.
