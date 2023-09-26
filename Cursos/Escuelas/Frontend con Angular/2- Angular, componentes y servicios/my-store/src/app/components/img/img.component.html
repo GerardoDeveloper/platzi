@@ -8,9 +8,9 @@
 <!-- Enviar datos desde un componente hijo  un componente padre -->
 
 <h1>Enviar datos desde el hijo al padre</h1>
-<h3>{{counter}}</h3>
+<!-- <h3>{{counter}}</h3> -->
 
 <ng-template #elseImg>
   <img [src]="imageDefault">
 </ng-template>
-<img width="200" (load)="imgLoad()" (error)="imgError()" [src]="img" *ngIf="img; else elseImg">
+<img (load)="imgLoad()" (error)="imgError()" [src]="img" *ngIf="img; else elseImg">

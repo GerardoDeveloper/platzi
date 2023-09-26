@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { Product } from './../../models/product.model';
 
@@ -27,4 +27,12 @@ export class ProductComponent {
             price: 0,
             image: ''
         };
+
+  // Creamos una propiedad que se comunica con su componente padre de tipo 'EventEmitter' y este ultimo es de tipo 'Product'
+  @Output() addedProduct = new EventEmitter<Product>();
+
+  onAddToCart(): void {
+    // Emitimos un producto.
+    this.addedProduct.emit(this.product);
+  }
 }

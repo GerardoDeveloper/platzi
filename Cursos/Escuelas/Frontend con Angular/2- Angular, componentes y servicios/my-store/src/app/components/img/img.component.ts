@@ -31,8 +31,8 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
    */
   @Output() loaded = new EventEmitter<string>();
 
-  counter = 0;
-  counterFn: number | undefined;
+  // counter = 0;
+  // counterFn: number | undefined;
 
   /**
    * ? - El constructor se ejecuta ANTES del render.
@@ -74,14 +74,14 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
    *
    */
   ngOnInit(): void {
-    console.log('ngOnInit', 'img =>', this.img);
+    // console.log('ngOnInit', 'img =>', this.img);
 
-    // ! Sí no se tiene cuidado de eliminar de memoria un evento, puede quedar ejecutandoce por siempre por más que el componente haya sido eliminado.
-    this.counterFn = window.setInterval(() => {
-      this.counter += 1;
-      console.log(`counter ${this.counter}`);
+    // // ! Sí no se tiene cuidado de eliminar de memoria un evento, puede quedar ejecutandoce por siempre por más que el componente haya sido eliminado.
+    // this.counterFn = window.setInterval(() => {
+    //   this.counter += 1;
+    //   console.log(`counter ${this.counter}`);
 
-    }, 1000);
+    // }, 1000);
   }
 
   /**
@@ -98,7 +98,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
    */
   ngOnDestroy(): void {
     console.log('ngOnDestroy');
-    window.clearInterval(this.counterFn); // De esta forma se puede limpiar y eliminar desde memoria un evento.
+    // window.clearInterval(this.counterFn); // De esta forma se puede limpiar y eliminar desde memoria un evento.
   }
 
   imgError() {
