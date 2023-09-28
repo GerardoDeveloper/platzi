@@ -1,17 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { StoreService } from './../../services/store.service';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+    selector: 'app-nav',
+    templateUrl: './nav.component.html',
+    styleUrls: ['./nav.component.css'],
 })
-export class NavComponent {
+export class NavComponent implements OnInit {
+    activeMenu = false;
+    counter = 0;
 
-  activeMenu = false;
+    constructor(private storeService: StoreService) {}
 
-  constructor() {}
+    ngOnInit(): void {
+        // ? El componente 'nav' se suscribe a la lista de productos.
+        this.storeService.myCart$.subscribe((products) => {
+            this.counter = products.length;
+        });
+    }
 
-  toggleMenu(): void {
-    this.activeMenu = !this.activeMenu;
-  }
+    toggleMenu(): void {
+        this.activeMenu = !this.activeMenu;
+    }
 }

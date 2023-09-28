@@ -4,11 +4,11 @@
 @import url('./app/style/reset.scss');
 
 .products--grid {
-  app-img {
-    img {
-      border-radius: 10px;
+    app-img {
+        img {
+            border-radius: 10px;
+        }
     }
-  }
 }
 
 /* img {
